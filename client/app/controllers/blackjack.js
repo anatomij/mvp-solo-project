@@ -22,6 +22,7 @@ angular.module('app.blackjack', [])
   	var playerWin = function ( ) {
   		$scope.playerWallet += $scope.pot*2
   		$scope.pot = 0;
+      alert('You win! \n Player: ' + userHand + '\n Dealer: ' + dealerHand );
   		gameOver = true;
   	}
 
@@ -77,13 +78,13 @@ angular.module('app.blackjack', [])
 
   	if (userHand > 21 || dealerHand > 21) {
   		if (userHand > 21) {
-  			alert('Player bust!');
   			dealerWin();
+        alert('Player bust!');
   		}
 
   		else if (dealerHand > 21) {
-  			alert('Dealer bust!');
   			playerWin();
+        alert('Dealer bust!');
   		}
   	}
   }
@@ -92,7 +93,7 @@ angular.module('app.blackjack', [])
   		$scope.clear();
 
   		if (!$scope.userBet || !$scope.player) {
-  			alert('You\'re missing some critical information that is needed to proceed with the games');
+  			alert('Please put in your username and bet amount');
   			endGame();
   		}
 
@@ -142,7 +143,6 @@ angular.module('app.blackjack', [])
   		};
 
   		if (userHand > dealerHand) {
-  			alert('You win! \n Player: ' + userHand + '\n Dealer: ' + dealerHand );
   			playerWin();
   		}
 
@@ -151,8 +151,8 @@ angular.module('app.blackjack', [])
   		}
 
   		else if (dealerHand < 22 && dealerHand > userHand) {
-  			alert('Dealer Wins');
   			dealerWin();
+        alert('Dealer wins');
   		}
   	};
 
