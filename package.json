@@ -1,5 +1,7 @@
 {
-  "directories": {},
+  "name": "mvp-blackjack",
+  "version": "1.1.0",
+  "description": "Angular Blackjack",
   "_resolved": "https://registry.npmjs.org/angular/-/angular-1.5.3.tgz",
   "dependencies": {
       "express": "~4.13.3",

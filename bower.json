@@ -1,9 +1,14 @@
 {
-  "name": "angular",
-  "version": "1.5.3",
-  "license": "MIT",
-  "main": "./angular.js",
-  "ignore": [],
+  "name": "mvp-blackjack",
+  "homepage": "https://github.com/anatomij/mvp-solo-project",
+  "authors": [
+    "Artem <artjom.svjatickis@gmail.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+  ],
   "dependencies": {
   }
 }
