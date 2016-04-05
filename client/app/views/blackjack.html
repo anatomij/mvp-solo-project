@@ -1,14 +1,16 @@
-<div>
-<div class='table'>
-    <h1>BLACKJACK</h1>
-
-  </div>
-
-  <input type= 'text' ng-model='search'/>
-  <table ng-repeat="key in data | filter:search" style='width:100%'>
-  <tr>
-    <td>{{key.field}}</td>
-    <td>{{key.total}}</td>
-  </tr>
-
+<div ng-controller="blackjackController" class="col-md-12 game">
+    <div class="col-md-3">
+      <input type="text" placeholder="Name:" ng-model="player"/>
+      <input type="text" placeholder="Bet amount:" ng-model="betAmount"/>
+      <p>Player: {{player}}</p>
+      <p>Wallet: {{playerWallet}}</p>
+      <p>Pot: {{pot}}</p>
+    </div>
+    <div class="col-md-3">
+      <button ng-click="deal()">Deal</button>
+      <button ng-click="userHit()">Hit</button>
+      <button ng-click="userStay()">Stay</button>
+      <p>Your Hand: {{userHandArr}} = {{userHand}}</p>
+      <p>Dealer's Hand:{{dealerHandArr}} = {{dealerHand}}</p>
+    </div>
 </div>
