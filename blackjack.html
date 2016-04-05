@@ -1,0 +1,15 @@
+<div id='tableData'>
+  <div class='table'>
+    <h1>BLACKJACK</h1>
+
+  </div>
+
+  <input type= 'text' ng-model='search'/>
+  <table ng-repeat="key in data | filter:search" style='width:100%'>
+  <tr>
+    <td>{{key.field}}</td>
+    <td>{{key.total}}</td>
+  </tr>
+
+</table>
+</div>
