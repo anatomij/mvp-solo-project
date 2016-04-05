@@ -3,10 +3,11 @@ angular.module('app', [
   'ui.router'
 ])
 .config(function ($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/blackjack');
+
   $stateProvider
   .state('blackjack', {
-      url: '/',
+      url: '/blackjack',
       templateUrl: 'app/views/blackjack.html',
       controller: 'blackjackController'
     })

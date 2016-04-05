@@ -2,6 +2,10 @@
   "name": "mvp-blackjack",
   "version": "1.1.0",
   "description": "Angular Blackjack",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
   "_resolved": "https://registry.npmjs.org/angular/-/angular-1.5.3.tgz",
   "dependencies": {
       "express": "~4.13.3",
