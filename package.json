@@ -5,10 +5,20 @@
   "scripts": {
     "start": "node server/app.js"
   },
+  "engines": {
+   "node": "0.12.12"
+ },
   "_resolved": "https://registry.npmjs.org/angular/-/angular-1.5.3.tgz",
   "dependencies": {
       "express": "~4.13.3",
       "request": "~2.61.0",
-      "body-parser": "~1.13.3"
+      "body-parser": "^1.4.3",
+      "mongoose": "^4.4.11",
+      "bcrypt-nodejs": "0.0.3",
+      "jwt-simple": "^0.2.0",
+      "mongoose": "^4.1.0",
+      "morgan": "^1.1.1",
+      "q": "^1.4.1",
+      "request": "^2.36.0"
     }
 }

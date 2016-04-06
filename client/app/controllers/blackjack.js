@@ -1,9 +1,12 @@
 angular.module('app.blackjack', [])
-.controller('blackjackController', function ($scope) {
+.controller('blackjackController', function ($scope, Auth) {
   var deck = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11];
   	$scope.pot = Number(0);
   	var betAmount = Number($scope.betAmount);
 
+    $scope.signout = function() {
+      Auth.signout();
+      };
 
   	var createPlayer = function ( name ) {
   		$scope.player = name;
